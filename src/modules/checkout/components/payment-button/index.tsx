@@ -202,7 +202,8 @@ const PayPalPaymentButton = ({
   return (
     <PayPalScriptProvider
       options={{
-        "client-id": PAYPAL_CLIENT_ID,
+        // "client-id": PAYPAL_CLIENT_ID,
+        clientId: PAYPAL_CLIENT_ID,
         currency: cart?.region.currency_code.toUpperCase(),
         intent: "authorize",
       }}
